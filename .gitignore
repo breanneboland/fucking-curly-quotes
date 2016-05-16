@@ -5,3 +5,4 @@ settings.py
 .idea/
 .DS_Store
 env
+notes.txt
