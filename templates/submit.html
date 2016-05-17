@@ -1,9 +1,12 @@
 {% extends "header.html" %}
 {% block content %}
         <div>
-            <form action="/submit" method="POST">
+            <form action="." method="POST">
                 <input type="text" name="text">
                 <input type="submit" name="text-form" value="GET IT">
             </form>
-        </div>      
+        </div>
+        <div>
+            <p>{{ text }}</p>
+        </div>
 {% endblock %}
