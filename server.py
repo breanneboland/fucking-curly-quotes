@@ -4,16 +4,19 @@ from flask_debugtoolbar import DebugToolbarExtension
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route("/")
 def index():
     """Homepage with form"""
     return render_template("homepage.html")
 
-@app.route('/submit', methods=['POST'])
+@app.route("/submit", methods=["GET"])
 def text_form_post():
-    text = request.form('text')
+    """Stub to pass submitted text through"""
+    text = request.args.get("text")
+    print text
+    print "text_form_post!"
     return render_template("submit.html", text=text)
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     app.debug = True
     app.run()
