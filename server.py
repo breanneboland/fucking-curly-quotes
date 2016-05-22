@@ -9,6 +9,11 @@ def index():
     """Homepage with form"""
     return render_template("homepage.html")
 
+@app.route("/sample")
+def sample_route():
+    """Just a test"""
+    return render_template("sample.html")
+
 @app.route("/submit", methods=["GET"])
 def text_form_post():
     """Stub to pass submitted text through"""
