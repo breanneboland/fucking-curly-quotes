@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from jinja2 import StrictUndefined
 from flask import Flask, render_template, request, redirect, flash, session, jsonify
 from flask_debugtoolbar import DebugToolbarExtension
@@ -19,9 +20,9 @@ def sample_route():
 def text_form_post():
     """Stub to pass submitted text through"""
     text = request.args.get("text")
-    forbidden_characters = ["“", "”", "‘", "’"]
-    # answer = unfuck_your_string(text)
-    return render_template("submit.html", text=text, forbidden=forbidden_characters)
+    # forbidden_characters = ["“", "”", "‘", "’"]
+    answer = unfuck_your_string(text)
+    return render_template("submit.html", text=text, answer=answer) #, forbidden=forbidden_characters)
 
 if __name__ == "__main__":
     app.debug = True
