@@ -20,15 +20,15 @@ unfucked_string = "These are words with no curly quotes."
 
 def unfuck_your_string (str): 
     if "“" in str:
-        return true
+        return True
     elif "”" in str:
-        return true
+        return True
     elif "‘" in str:
-        return true
+        return True
     elif "’" in str:
-        return true
+        return True
     else:
-        return false
+        return False
 
 # unfuck_your_string(sample_fucked_string)
 # unfuck_your_string(other_sample_fucked_string)
