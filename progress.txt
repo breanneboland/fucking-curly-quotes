@@ -1,0 +1,3 @@
+unfuck_your_string does not work if you iterate through curly quotes list or dict. 
+unfuck_your_string DOES work if you if-elif-else using curly quotes - but only if you use unfuck.py by itself.
+If you import unfuck_your_string to server.py, it hangs up on the curly quotes. (Error to be rediscovered in the morning...)

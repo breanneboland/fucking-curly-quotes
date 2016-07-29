@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
-
-# print "Stuff works, ok"
+import sys
 
 # My first go at providing forbidden characters to my eventual function
 forbidden_characters = ["“", "”", "‘", "’"]
@@ -20,17 +19,18 @@ unfucked_string = "These are words with no curly quotes."
 
 def unfuck_your_string (str): 
     if "“" in str:
-        return True
+        print (True)
     elif "”" in str:
-        return True
+        print (True)
     elif "‘" in str:
-        return True
+        print (True)
     elif "’" in str:
-        return True
+        print (True)
     else:
-        return False
+        print (False)
 
 # unfuck_your_string(sample_fucked_string)
 # unfuck_your_string(other_sample_fucked_string)
 # unfuck_your_string(unfucked_string)
+# print (sys.version)
 # unfuck_your_string(string_from_terminal)
